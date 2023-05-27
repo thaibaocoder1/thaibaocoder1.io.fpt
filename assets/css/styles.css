@@ -486,3 +486,217 @@ a {
   background-color: #fff;
   color: var(--text-color);
 }
+/* CSS Pricing */
+.pricing {
+  padding: 9rem 0;
+  background-color: var(--sub-bg-color);
+}
+.pricing-top {
+  text-align: center;
+  max-width: 52.8rem;
+  margin: 0 auto;
+}
+.pricing-top__heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+.pricing-cards {
+  margin-top: 6rem;
+  display: flex;
+  margin-left: -4.5rem;
+}
+.pricing-card {
+  width: calc((100% / 3) - 4.5rem);
+  margin-left: 4.5rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 2px 2px 1rem 0 rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.pricing-content {
+  padding: 6.4rem 1.5rem;
+}
+.pricing-content__title {
+  color: var(--text-color);
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  margin-bottom: 3.2rem;
+}
+.pricing-content__desc {
+  color: var(--desc-color);
+  margin-bottom: 4.8rem;
+}
+.pricing-content__desc li {
+  margin-bottom: 1rem;
+}
+.pricing-content__desc li:last-child {
+  margin-bottom: 0;
+}
+.pricing-content__amount {
+  display: block;
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 1.4;
+  margin-bottom: 4.8rem;
+}
+.pricing-content__amount-month {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--text-color);
+}
+.btn-pricing {
+  min-width: 12.4rem;
+  height: 4.6rem;
+  line-height: 4.6rem;
+  color: #fff;
+  background-color: var(--text-color);
+  border-color: var(--text-color);
+  margin-left: 0;
+}
+.btn-pricing:hover {
+  background-color: transparent;
+  color: var(--text-color);
+}
+/* CSS Accordion */
+.accordion {
+  padding: 9rem 0;
+  background-color: #fff;
+}
+.accordion-top {
+  max-width: 52.8rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.accordion-top__heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+.accordion-body {
+  padding: 0 20rem;
+}
+.accordion-list {
+  margin-top: 2.4rem;
+}
+.accordion-item {
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+.accordion-header__icon {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.accordion-header__heading {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 600;
+  width: 100%;
+}
+.accordion-content {
+  color: var(--desc-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s linear;
+  box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.accordion-content.is-active {
+  height: auto;
+}
+.accordion-inner-content {
+  padding: 2rem;
+  background-color: #cccccc5d;
+}
+/* CSS Footer */
+.footer {
+  padding: 6.5rem 0;
+  background-color: var(--text-color);
+  color: #fff;
+}
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 10rem;
+}
+.footer-col__heading {
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.footer-col__desc,
+.footer-contact {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.footer-col__link {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: 0.8;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  margin-bottom: 2rem;
+}
+.footer-social__item {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.footer-social__item:hover {
+  transform: scale(1.1);
+}
+.footer-social:hover .footer-social__item:not(:hover) {
+  filter: blur(2px);
+}
+.footer-contact__link {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: bold;
+}
+.footer-contact__link:hover {
+  color: var(--active-color);
+  text-decoration: underline;
+}
+.footer-copyright {
+  margin-top: 4rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
