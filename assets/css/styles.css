@@ -662,7 +662,7 @@ a {
   opacity: 0.8;
 }
 .footer-social {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0 1rem;
   margin-bottom: 2rem;
@@ -678,6 +678,9 @@ a {
   font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.25s ease;
+}
+.footer-social__link i {
+  color: var(--text-color);
 }
 .footer-social__item:hover {
   transform: scale(1.1);
