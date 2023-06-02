@@ -136,10 +136,13 @@
   /* Testimonials */
   .testimonials-list {
     display: block;
-    width: 100%;
   }
   .testimonials-item {
-    display: block;
+    width: 88%;
+    margin-bottom: 1.5rem;
+  }
+  .testimonials-item:last-child {
+    margin-bottom: 0;
   }
   /* Accordion */
   .accordion {
