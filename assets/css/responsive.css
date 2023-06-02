@@ -1,0 +1,148 @@
+@media screen and (max-width: 1023.98px) {
+  /* Header */
+  .header-body {
+    justify-content: space-between;
+  }
+  .cta-icon {
+    display: block;
+  }
+  .btn-header {
+    display: none;
+  }
+  .navbar {
+    position: fixed;
+    top: 3.5rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #fff2dc;
+    display: none;
+    transition: all 0.3 ease-in;
+    z-index: 10;
+  }
+  .navbar.active {
+    display: block;
+    left: 100%;
+  }
+  /* Hero */
+  .hero-body {
+    flex-direction: column;
+  }
+  .hero-content,
+  .hero-images {
+    width: 100%;
+  }
+  .hero-content {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .hero-content__heading {
+    font-size: 7rem;
+  }
+  .btn-hero {
+    display: block;
+  }
+  .hero-img {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  /* Features */
+  .features-list {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem 0;
+  }
+  /* Popular */
+  .popular-body {
+    flex-direction: column;
+    align-items: normal;
+  }
+  .popular-content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .popular-images {
+    width: 100%;
+  }
+  .popular-img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  /* Details */
+  .details-body {
+    flex-direction: column;
+  }
+  .details-img {
+    flex-shrink: 0;
+    width: 80%;
+    height: 80%;
+  }
+  .details-content {
+    margin-top: 4rem;
+    padding-left: 0;
+  }
+  /* Testimonials */
+  .testimonials-list {
+    flex-wrap: wrap;
+    margin-left: 0;
+    gap: 1rem;
+  }
+  .testimonials-item {
+    width: calc(50% - 5.5rem);
+    margin-left: 0;
+  }
+  /* Pricing */
+  .pricing-cards {
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 2rem 0;
+  }
+  .pricing-card {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  /* Accordion */
+  .footer {
+    padding: 5rem 0;
+  }
+  .accordion-body {
+    padding: 0;
+  }
+  /* Footer */
+  .footer-row {
+    grid-template-columns: 1fr;
+  }
+  .footer-col {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  /* Hero */
+  .hero-content__heading {
+    font-size: 4rem;
+  }
+  .hero-content__heading-view {
+    text-underline-offset: 1.2rem;
+  }
+  /* Features */
+  .features-top__heading {
+    font-size: 3rem;
+  }
+  /* Popular */
+  .btn-popular {
+    display: block;
+  }
+  /* Testimonials */
+  .testimonials-list {
+    display: block;
+    width: 100%;
+  }
+  .testimonials-item {
+    display: block;
+  }
+  /* Accordion */
+  .accordion {
+    display: none;
+  }
+}
