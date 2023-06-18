@@ -13,3 +13,26 @@ window.addEventListener("load", function () {
     icon.classList.toggle("fa-caret-down");
   }
 });
+// Navbar
+window.addEventListener("load", function () {
+  const navbarEL = document.querySelector(".navbar");
+  const barsEl = document.querySelector(".cta-icon");
+  barsEl.addEventListener("click", function (e) {
+    navbarEL.classList.toggle("active");
+  });
+});
+// Move to top
+const btnScroll = document.querySelector(".move-to-top");
+window.addEventListener("scroll", function () {
+  if (this.scrollY > 300) {
+    btnScroll.classList.add("active");
+  } else {
+    btnScroll.classList.remove("active");
+  }
+});
+btnScroll.addEventListener("click", (e) => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
